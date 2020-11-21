@@ -16,5 +16,8 @@
     <div class="body">
             <h1>just a page</h1>
     </div>
+    <div>
+        <a href="{{ asset('studentinsert')}}">Student</a>
+    </div>
 </body>
 </html>

@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('studentinsert','StudentController@std');
+Route::post('adddata','StudentController@insert');
+Route::get('allstudents','StudentController@show');
+Route::get('update/{id}','StudentController@update');
+Route::post('updatestore/{id}','StudentController@updatestore');
+Route::get('deletestd/{id}','StudentController@delete');
